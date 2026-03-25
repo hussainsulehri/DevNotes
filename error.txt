@@ -1,0 +1,30 @@
+Debugger listening on ws://127.0.0.1:63493/4e6b2d6f-bb1d-4d97-8cc9-839773d13132
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Waiting for the debugger to disconnect...
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module '../models/Note'
+Require stack:
+- C:\Web design\INoteBook\inotebook\backend\routes\notes.js
+- C:\Web design\INoteBook\inotebook\backend\index.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Web design\INoteBook\inotebook\backend\routes\notes.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Web design\\INoteBook\\inotebook\\backend\\routes\\notes.js',
+    'C:\\Web design\\INoteBook\\inotebook\\backend\\index.js'
+  ]
+}
+
+Node.js v22.14.0
